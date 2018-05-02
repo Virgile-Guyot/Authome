@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+$_SESSION['adresse_mail'] = $_POST['email'];
+$_SESSION['mot_de_passe'] = $_POST['password'];
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
