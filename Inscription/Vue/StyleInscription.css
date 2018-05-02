@@ -1,0 +1,153 @@
+body
+{
+    position:relative;
+    font-family: 'CenturyGothic';
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 50px 650px 150px;
+
+}
+
+@font-face
+{
+    font-family: 'CenturyGothic';
+    src : url('../Ressources/CenturyGothic.ttf');
+
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    padding-left: 0.5%;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(44,78,120,1);
+    grid-column: 1;
+    grid-row:1;
+}
+
+
+header p{
+    margin:0.5%;
+    font-size: 2em;
+    color: white;
+}
+
+#ZoneCentrale{
+    display: grid;
+    grid-template-rows: 10% 10% 70% 10%;
+    grid-template-columns: 25% 50% 25%;
+    grid-row: 2;
+    background-image: url("../Ressources/Fond_Accueil_2.png");
+    background-size: cover;
+}
+
+.Titre{
+    color:white;
+    margin-top:auto;
+    margin-bottom: auto;
+    text-align:center;
+    grid-row:2;
+    grid-column: 2;
+    font-size: 3em;
+    background-color: rgba(44,78,120,1);
+}
+.Formulaire{
+    grid-row: 3;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: repeat(100,auto);
+    background-color: rgba(44,78,120,1);
+}
+input{
+    padding:1%;
+}
+.nom{
+    grid-column: 2;
+    grid-row: 10/15;
+    border:none;
+    background-color: white;
+}
+.prenom{
+    grid-column: 2;
+    grid-row: 20/25;
+    border:none;
+    background-color: white;
+}
+.DdN{
+    grid-column: 2;
+    grid-row: 30/35;
+    border:none;
+    background-color: white;
+}
+.telephone{
+    grid-column: 2;
+    grid-row: 40/45;
+    border:none;
+    background-color: white;
+}
+.adresse{
+    grid-column: 2;
+    grid-row: 50/55;
+    border:none;
+    background-color: white;
+}
+.ville{
+    grid-column: 2;
+    grid-row: 60/65;
+    border:none;
+    background-color: white;
+}
+.CdP{
+    grid-column: 2;
+    grid-row: 70/75;
+    border:none;
+    background-color: white;
+}
+
+.bouton{
+    font-size: 1.3em;
+    grid-column: 2;
+    grid-row: 85/90;
+    border:none;
+    background-color: white;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 5% 55% 35% 5%;
+    grid-template-rows: repeat(30,5px);
+    grid-row:3;
+    background-color: rgba(44,78,120,1);
+    color: white;
+}
+.gauche{
+    grid-column: 2;
+}
+.droite{
+    grid-column: 3;
+}
+#contact{
+    font-size:1.3em;
+    grid-row:2;
+}
+#ad{
+    grid-row:10;
+}
+#adM{
+    grid-row:15;
+}
+#tel{
+    grid-row:20;
+}
+#ml{
+    grid-row:10;
+}
+#cgu{
+    grid-row:15;
+}
